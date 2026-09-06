@@ -314,3 +314,9 @@
 - 공개 저장소는 `https://github.com/hoya0328/MoneyGun`이며 secret scanning과 push
   protection을 켰다. CI의 Windows 커널 뮤텍스 통합 테스트는 Windows에서만 실행하고
   Linux GitHub runner에서는 명시적으로 skip한다.
+
+### 2026-09-06 README 문장 정리
+
+- 공개 README를 포트폴리오 방문자가 빠르게 읽을 수 있도록 줄였다.
+- 직원 역할, 매매 모드와 안전장치는 유지하고 보고서식 표현과 중복 설명은 제거했다.
+- 제품 기능과 실제 주문 로직은 변경하지 않았다.
