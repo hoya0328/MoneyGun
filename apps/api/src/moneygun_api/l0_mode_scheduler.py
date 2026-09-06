@@ -50,7 +50,7 @@ def run_once(api_url: str, now_kst: datetime | None = None) -> list[dict[str, ob
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="MoneyGun L0 multi-mode preparation scheduler")
+    parser = argparse.ArgumentParser(description="Signal Guild L0 multi-mode preparation scheduler")
     parser.add_argument("--api-url", default="http://127.0.0.1:8000")
     parser.add_argument("--interval", type=int, default=20)
     parser.add_argument("--once", action="store_true")

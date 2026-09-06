@@ -79,7 +79,7 @@ do {
 } while ($remaining.Count -gt 0 -and (Get-Date) -lt $deadline)
 
 if ($remaining.Count -gt 0) {
-    throw 'MoneyGun loopback listeners did not stop cleanly.'
+    throw 'Signal Guild loopback listeners did not stop cleanly.'
 }
 
-Write-Host "MoneyGun Desktop Live stopped. Verified listener processes stopped: $($targets.Count)."
+Write-Host "Signal Guild Desktop Live stopped. Verified listener processes stopped: $($targets.Count)."

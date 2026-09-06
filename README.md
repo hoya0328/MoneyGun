@@ -1,21 +1,23 @@
 <p align="center">
-  <img src="./docs/assets/portfolio-banner.png" width="100%" alt="MoneyGun — 작은 투자회사의 판단 과정을 한눈에" />
+  <img src="./docs/assets/portfolio-banner.png" width="100%" alt="Signal Guild — 여러 시선이 모여 하나의 투자 결정을 만듭니다" />
 </p>
 
 <p align="center">
-  <img src="./apps/web/public/brand/moneygun-logo.svg" width="76" alt="MoneyGun 픽셀 금고 로고" />
+  <img src="./apps/web/public/brand/signal-guild-mark.svg" width="76" alt="Signal Guild 픽셀 길드 문장" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/hoya0328/MoneyGun/actions/workflows/ci.yml"><img src="https://github.com/hoya0328/MoneyGun/actions/workflows/ci.yml/badge.svg" alt="CI 검사 상태" /></a>
+  <a href="https://github.com/hoya0328/signal-guild/actions/workflows/ci.yml"><img src="https://github.com/hoya0328/signal-guild/actions/workflows/ci.yml/badge.svg" alt="CI 검사 상태" /></a>
   <img src="https://img.shields.io/badge/Stage-Local_Pilot-167452?style=flat-square" alt="로컬 파일럿 단계" />
   <img src="https://img.shields.io/badge/React-TypeScript-315b46?style=flat-square" alt="React와 TypeScript" />
   <img src="https://img.shields.io/badge/FastAPI-Python-658c36?style=flat-square" alt="FastAPI와 Python" />
 </p>
 
-# MoneyGun
+# Signal Guild
 
-**분석부터 위험 검토, 주문과 복구까지. 개인용 투자 자동화를 작은 회사의 형태로 풀어낸 프로젝트입니다.**
+**여러 시선이 모여 하나의 투자 결정을 만듭니다.**
+
+Research together. Execute with discipline.
 
 [사용 가이드](docs/USER_GUIDE.md) · [아키텍처](docs/ARCHITECTURE.md) · [운용 모드](docs/MODE_PROFILES.md) · [로드맵](docs/ROADMAP.md)
 
@@ -23,14 +25,14 @@
 
 자동매매를 직접 사용하려면 수익률보다 먼저 이해해야 할 것이 있다고 생각했습니다. 어떤 자료를 보고 종목을 골랐는지, 왜 매수를 보류했는지, 프로그램이 중단됐다가 돌아왔을 때 주문이 중복되지 않는지를 확인할 수 있어야 했습니다.
 
-MoneyGun은 이 과정을 공시·차트·찬반 검토·위험 관리·주문 담당으로 나눕니다. 각 역할을 귀여운 픽셀 직원으로 표현하되, 실제 거래 권한은 별도의 실행 계층에 두었습니다. **보기 쉬운 화면과 보수적인 실행 구조를 함께 만드는 것**이 이 프로젝트의 중심입니다.
+Signal Guild는 이 과정을 공시·차트·찬반 검토·위험 관리·주문 담당으로 나눕니다. 각 역할을 귀여운 픽셀 길드원으로 표현하되, 실제 거래 권한은 별도의 실행 계층에 두었습니다. **보기 쉬운 화면과 보수적인 실행 구조를 함께 만드는 것**이 이 프로젝트의 중심입니다.
 
 소규모 자본으로 시작하는 개인용 실험이며, 한국 주식을 우선 대상으로 합니다. 특정 수익을 약속하거나 검증되지 않은 전략을 완성된 투자 상품처럼 제공하려는 프로젝트는 아닙니다.
 
 ## 복잡한 상태를 읽기 쉬운 사무실로
 
 <p align="center">
-  <img src="./apps/web/public/assets/moneygun-pixel-office-v1.png" width="100%" alt="픽셀 직원들이 각자 자리에서 일하는 MoneyGun 사무실 아트" />
+  <img src="./apps/web/public/assets/moneygun-pixel-office-v1.png" width="100%" alt="픽셀 길드원들이 각자 자리에서 일하는 Signal Guild 오피스 아트" />
   <br />
   <sub>프로젝트의 픽셀 사무실 아트입니다. 실계좌 화면이나 투자 성과 자료가 아닙니다.</sub>
 </p>
@@ -119,8 +121,8 @@ flowchart TD
 Windows 로컬 실행 기준으로 Node.js 24와 Python 3.13을 사용합니다. 아래 명령은 PowerShell 기준입니다.
 
 ```powershell
-git clone https://github.com/hoya0328/MoneyGun.git
-Set-Location MoneyGun
+git clone https://github.com/hoya0328/signal-guild.git
+Set-Location signal-guild
 npm install
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e "apps/api[dev]"
@@ -153,6 +155,9 @@ Windows 커널 뮤텍스 통합 검사는 Windows 환경에서 확인하며, Lin
 | 다음 개발과 검증 범위 | [로드맵](docs/ROADMAP.md) · [인수인계](docs/HANDOFF.md) |
 
 > 개인용 투자 자동화 연구 프로젝트입니다. 투자 조언이나 수익 보장이 아니며, 원금 전액을 잃을 수 있습니다. 신용·레버리지·공매도·파생상품은 기본 범위에 포함하지 않습니다.
+
+> 운영 호환성을 위해 `MONEYGUN_*` 환경변수, `moneygun_api` 패키지, 로컬 DB·백업
+> 파일명과 Windows 예약 작업 ID는 기존 이름을 유지합니다.
 
 ---
 

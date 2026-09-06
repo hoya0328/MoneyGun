@@ -1,4 +1,4 @@
-# MoneyGun 로컬 운영 런북
+# Signal Guild 로컬 운영 런북
 
 최종 갱신: 2026-08-31
 

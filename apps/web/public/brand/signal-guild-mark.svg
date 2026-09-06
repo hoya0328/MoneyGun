@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title description">
+  <title id="title">Signal Guild logo</title>
+  <desc id="description">A pixel guild crest connecting research signals to a guarded decision.</desc>
+  <rect width="128" height="128" rx="24" fill="#052E24"/>
+  <path d="M24 12h80v8h12v70c0 16-12 26-24 32l-28 14-28-14c-12-6-24-16-24-32V20h12z" fill="#0B3B2E" stroke="#2F6F52" stroke-width="4"/>
+  <path d="M25 22h78v7h7v59c0 12-9 20-20 26l-26 13-26-13c-11-6-20-14-20-26V29h7z" fill="none" stroke="#A3E635" stroke-width="4"/>
+  <path d="M34 84 52 66l14 10 28-31" fill="none" stroke="#D9F99D" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M88 42h12v12" fill="none" stroke="#D9F99D" stroke-width="6"/>
+  <circle cx="34" cy="84" r="7" fill="#34D399"/>
+  <circle cx="52" cy="66" r="7" fill="#34D399"/>
+  <circle cx="66" cy="76" r="7" fill="#34D399"/>
+  <circle cx="94" cy="45" r="7" fill="#A3E635"/>
+  <path d="M55 96h18v8H55z" fill="#ECFDF5"/>
+  <path d="M20 20h8v8h-8zm80 0h8v8h-8z" fill="#34D399"/>
+</svg>

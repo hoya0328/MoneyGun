@@ -38,7 +38,7 @@ foreach ($candidate in $PreferredApiPort..($PreferredApiPort + 10)) {
     }
 }
 if ($null -eq $apiPort) {
-    throw 'No MoneyGun API port is available in the 8000-8010 range.'
+    throw 'No Signal Guild API port is available in the 8000-8010 range.'
 }
 
 if ($apiNeedsStart) {
@@ -58,14 +58,14 @@ if ($apiNeedsStart) {
         Start-Sleep -Milliseconds 500
     }
     if (-not $ready) {
-        throw "MoneyGun API did not start within 20 seconds. Port: $apiPort"
+        throw "Signal Guild API did not start within 20 seconds. Port: $apiPort"
     }
 }
 
 $env:VITE_API_BASE_URL = "http://127.0.0.1:$apiPort"
 $webListener = Get-NetTCPConnection -LocalPort $WebPort -State Listen -ErrorAction SilentlyContinue
-Write-Host "MoneyGun API: http://127.0.0.1:$apiPort"
-Write-Host "MoneyGun Web: $webOrigin"
+Write-Host "Signal Guild API: http://127.0.0.1:$apiPort"
+Write-Host "Signal Guild Web: $webOrigin"
 if ($webListener) {
     Write-Host 'The web server is already running. Refresh the browser.'
     exit 0

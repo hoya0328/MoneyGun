@@ -1,4 +1,4 @@
-# MoneyGun 기본 전략 명세
+# Signal Guild 기본 전략 명세
 
 최종 갱신: 2026-08-31
 전략 ID: `QMB-EOD-KR-v1`

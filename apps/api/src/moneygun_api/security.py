@@ -28,7 +28,7 @@ class OidcBearerVerifier:
             raise AuthenticationError("운영 OIDC 발급자와 클라이언트 ID가 설정되지 않았습니다.")
         request = Request(
             f"{self.issuer}/.well-known/openid-configuration",
-            headers={"Accept": "application/json", "User-Agent": "MoneyGun/0.8"},
+            headers={"Accept": "application/json", "User-Agent": "SignalGuild/0.8"},
         )
         try:
             with urlopen(request, timeout=5) as response:  # noqa: S310 - HTTPS issuer enforced

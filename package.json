@@ -2,7 +2,7 @@
   "name": "moneygun",
   "private": true,
   "version": "0.1.0",
-  "description": "Private AI investment-company operating system prototype",
+  "description": "Signal Guild private AI investment-company operating system",
   "workspaces": [
     "apps/web"
   ],

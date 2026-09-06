@@ -2,7 +2,7 @@
 
 > 이 형식은 연결·연구용 기본 번들이다. 상장폐지와 과거 지정상태까지 입증하는 실거래 자격 검증에는 [DATA_QUALIFICATION.md](./DATA_QUALIFICATION.md)의 schema 2.0을 사용한다.
 
-MoneyGun은 KRX의 비공식 다운로드 URL을 자동 호출하지 않는다. 사용자가 내부 연구 이용 권한을 확인한 데이터만 `MONEYGUN_MARKET_DATA_IMPORT_DIR`에 넣고 내용 주소형 스냅샷으로 가져온다. 원본과 이용 조건은 별도로 보존한다.
+Signal Guild는 KRX의 비공식 다운로드 URL을 자동 호출하지 않는다. 사용자가 내부 연구 이용 권한을 확인한 데이터만 `MONEYGUN_MARKET_DATA_IMPORT_DIR`에 넣고 내용 주소형 스냅샷으로 가져온다. 원본과 이용 조건은 별도로 보존한다.
 
 ## 최소 형식
 

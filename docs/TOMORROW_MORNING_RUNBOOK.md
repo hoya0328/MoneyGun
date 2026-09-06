@@ -1,4 +1,4 @@
-# MoneyGun 내일 아침 L0 실행 안내
+# Signal Guild 내일 아침 L0 실행 안내
 
 기준일: 2026-09-02  
 대상: 한국 주식 50,000원 L0 승인형 실거래 파일럿  
@@ -8,7 +8,7 @@
 
 실제 비밀값은 채팅·문서·Git에 보내지 않고 로컬 `.env` 또는 운영 Secret Manager에만 입력한다.
 
-1. 이미 발급받은 키움 **실전** App Key와 Secret을 격리된 주문 변수 `KIWOOM_ORDER_APP_KEY`, `KIWOOM_ORDER_SECRET_KEY`에도 명시적으로 연결한다. 키움은 별도 조회/주문 키를 발급하는 구조가 아니지만 MoneyGun은 프로세스 권한을 분리하기 위해 자동 fallback하지 않는다.
+1. 이미 발급받은 키움 **실전** App Key와 Secret을 격리된 주문 변수 `KIWOOM_ORDER_APP_KEY`, `KIWOOM_ORDER_SECRET_KEY`에도 명시적으로 연결한다. 키움은 별도 조회/주문 키를 발급하는 구조가 아니지만 Signal Guild는 프로세스 권한을 분리하기 위해 자동 fallback하지 않는다.
 2. 임의 생성한 24자 이상 소유자 2차 승인값을 `MONEYGUN_OWNER_API_TOKEN`에 넣는다.
 3. 운영 PostgreSQL, HTTPS 주소, OIDC 발급자·클라이언트, 외부 비밀관리, 오류 감시, 관리형 시점복구 값을 연결한다.
 4. 새 릴리스 후보 commit을 만들고 `릴리스 점검`이 통과한 뒤에만 `MONEYGUN_RELEASE_APPROVED=true`, 마지막으로 `KIWOOM_TRADING_ENABLED=true`를 설정한다.

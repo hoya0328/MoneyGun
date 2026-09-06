@@ -732,7 +732,7 @@ def build_live_intent(
         managed_quantities = _managed_position_quantities(database, target_mission_id)
         if int(shadow["quantity"]) > managed_quantities.get(shadow["symbol"], 0):
             blockers.append(
-                "MoneyGun이 실제 체결로 관리하는 보유 수량보다 많이 매도할 수 없습니다."
+                "Signal Guild가 실제 체결로 관리하는 보유 수량보다 많이 매도할 수 없습니다."
             )
     if is_l0 and shadow["side"] == "BUY":
         risk = pilot_risk_snapshot(database, target_mission_id)
@@ -961,7 +961,9 @@ def submit_live_intent(
     else:
         managed_quantities = _managed_position_quantities(database, intent["mission_id"])
         if int(intent["quantity"]) > managed_quantities.get(intent["symbol"], 0):
-            raise ExecutionError("제출 직전 MoneyGun 관리 보유 수량보다 많은 매도를 차단했습니다.")
+            raise ExecutionError(
+                "제출 직전 Signal Guild 관리 보유 수량보다 많은 매도를 차단했습니다."
+            )
     try:
         guardian.desktop_live.require_armed()
     except DesktopLiveError as error:

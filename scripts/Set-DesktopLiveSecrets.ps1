@@ -28,7 +28,7 @@ $secrets = [ordered]@{
     KIWOOM_SECRET_KEY = Read-RequiredSecret 'Kiwoom production read Secret Key'
     KIWOOM_ORDER_APP_KEY = Read-RequiredSecret 'Kiwoom production order App Key'
     KIWOOM_ORDER_SECRET_KEY = Read-RequiredSecret 'Kiwoom production order Secret Key'
-    MONEYGUN_OWNER_API_TOKEN = Read-RequiredSecret 'MoneyGun owner token (24+ chars)' 24
+    MONEYGUN_OWNER_API_TOKEN = Read-RequiredSecret 'Signal Guild owner token (24+ chars)' 24
 }
 $secrets | Export-Clixml -LiteralPath $secretPath -Depth 3 -Force
 

@@ -16,7 +16,7 @@ New-Item -ItemType Directory -Path $logRoot -Force | Out-Null
 $createdNew = $false
 $mutex = [Threading.Mutex]::new($true, 'Local\MoneyGunDesktopLiveSupervisor', [ref]$createdNew)
 if (-not $createdNew) {
-    throw 'MoneyGun DESKTOP_LIVE supervisor is already running.'
+    throw 'Signal Guild DESKTOP_LIVE supervisor is already running.'
 }
 
 function Test-Truthy([object]$Value) {

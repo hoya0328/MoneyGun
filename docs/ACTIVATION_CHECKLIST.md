@@ -1,4 +1,4 @@
-# MoneyGun 실사용 전환 체크리스트
+# Signal Guild 실사용 전환 체크리스트
 
 최종 갱신: 2026-09-02
 
@@ -48,9 +48,9 @@
 2. 사용할 PC 또는 서버의 공인 IP를 등록한다.
 3. 신한은행 연계 키움 계좌를 선택하고 계좌 비밀번호·SMS 인증으로 등록한다.
 4. `DESKTOP_LIVE`에서는 실전 조회·주문 App Key/Secret과 24자 이상 소유자 토큰을 `.env`가 아니라 `scripts/Set-DesktopLiveSecrets.ps1`로 현재 Windows 사용자에게 암호화해 저장한다.
-5. 키움은 등록 계좌의 실전 App Key/Secret으로 조회와 주문 토큰을 발급한다. MoneyGun은 프로세스 격리를 위해 조회·주문 값을 각각 **명시적으로** 입력하며 자동 복사하거나 fallback하지 않는다.
+5. 키움은 등록 계좌의 실전 App Key/Secret으로 조회와 주문 토큰을 발급한다. Signal Guild는 프로세스 격리를 위해 조회·주문 값을 각각 **명시적으로** 입력하며 자동 복사하거나 fallback하지 않는다.
 
-MoneyGun은 사용자의 결정에 따라 모의투자 키를 사용하지 않는다. 모든 운영 관문을 통과하기 전까지 `KIWOOM_TRADING_ENABLED=false`를 유지한다.
+Signal Guild는 사용자의 결정에 따라 모의투자 키를 사용하지 않는다. 모든 운영 관문을 통과하기 전까지 `KIWOOM_TRADING_ENABLED=false`를 유지한다.
 
 ## 2. DESKTOP_LIVE 설치 순서
 

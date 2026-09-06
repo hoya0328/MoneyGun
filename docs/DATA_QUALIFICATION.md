@@ -6,13 +6,13 @@
 
 현재 키움 공식 스냅샷은 실제 가격이지만 현재 살아 있는 8종목만 담는다. 이 결과는 연결 확인과 연구 실행에는 쓸 수 있어도, 상장폐지 종목과 과거 투자유의 상태가 빠져 있어 실거래 자격 증거가 될 수 없다.
 
-MoneyGun의 schema `2.0` 자격 번들은 다음 세 원본을 함께 고정한다.
+Signal Guild의 schema `2.0` 자격 번들은 다음 세 원본을 함께 고정한다.
 
 1. 상장폐지 종목을 포함한 KOSPI·KOSDAQ 보통주 일봉
 2. 종목별 상장일·상장폐지일 생애주기
 3. 투자주의·경고·위험, 거래정지, 관리종목, 단기과열 등 적용 기간
 
-공식 다운로드 시작점은 [KRX 정보데이터시스템](https://data.krx.co.kr/contents/MDC/MAIN/main/index.cmd)과 [KIND 상세검색](https://kind.krx.co.kr/disclosure/details.do?method=searchDetailsMain)이다. MoneyGun은 KIND 화면이 사용하는 공개 검색·Excel 흐름만 호출하며 요청 구간, 페이지, 원본 SHA-256을 모두 보존한다. 로그인 뒤에만 제공되는 KRX `전종목 지정내역`을 우회하지 않는다.
+공식 다운로드 시작점은 [KRX 정보데이터시스템](https://data.krx.co.kr/contents/MDC/MAIN/main/index.cmd)과 [KIND 상세검색](https://kind.krx.co.kr/disclosure/details.do?method=searchDetailsMain)이다. Signal Guild는 KIND 화면이 사용하는 공개 검색·Excel 흐름만 호출하며 요청 구간, 페이지, 원본 SHA-256을 모두 보존한다. 로그인 뒤에만 제공되는 KRX `전종목 지정내역`을 우회하지 않는다.
 
 ## 가장 쉬운 권장 경로
 
@@ -40,7 +40,7 @@ KRX 화면에서 거래일마다 파일을 반복 다운로드하지 않는다. 
 5. `투자주의환기종목` — 검색 코드 `0356`
 6. `매매거래정지 및 정지해제` — 검색 코드 `0311`
 
-MoneyGun은 이 공식 화면의 1년 조회 제한과 페이지당 100건 조건을 지키며 전체 페이지 Excel을 자동 보존한다. 수동으로 찾을 때는 시장 `전체`, 회사명 공란, 기간 1년 이하로 조회한다. KRX에서 현재 상태를 확인할 수 있는 공식 화면은 [매매거래정지](https://data.krx.co.kr/contents/MDC/STAT/issue/MDCSTAT213.jsp), [관리종목](https://data.krx.co.kr/contents/MDC/STAT/issue/MDCSTAT215.jsp), [투자주의환기종목](https://data.krx.co.kr/contents/MDC/STAT/issue/MDCSTAT218.jsp)이다.
+Signal Guild는 이 공식 화면의 1년 조회 제한과 페이지당 100건 조건을 지키며 전체 페이지 Excel을 자동 보존한다. 수동으로 찾을 때는 시장 `전체`, 회사명 공란, 기간 1년 이하로 조회한다. KRX에서 현재 상태를 확인할 수 있는 공식 화면은 [매매거래정지](https://data.krx.co.kr/contents/MDC/STAT/issue/MDCSTAT213.jsp), [관리종목](https://data.krx.co.kr/contents/MDC/STAT/issue/MDCSTAT215.jsp), [투자주의환기종목](https://data.krx.co.kr/contents/MDC/STAT/issue/MDCSTAT218.jsp)이다.
 
 ```text
 data/imports/raw/kind/

@@ -8,7 +8,7 @@ from .storage import Database
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="MoneyGun end-of-day shadow operations worker")
+    parser = argparse.ArgumentParser(description="Signal Guild end-of-day shadow operations worker")
     parser.add_argument(
         "--force", action="store_true", help="time gate only; never enables trading"
     )

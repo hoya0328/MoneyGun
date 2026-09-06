@@ -45,7 +45,7 @@ def _sha256(path: Path) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="MoneyGun 공식 한국시장 원본 수집")
+    parser = argparse.ArgumentParser(description="Signal Guild 공식 한국시장 원본 수집")
     parser.add_argument("--start", default="2021-08-28")
     parser.add_argument("--end", default="2026-08-28")
     parser.add_argument("--workers", type=int, default=4)

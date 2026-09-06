@@ -36,7 +36,7 @@ def run_once(api_url: str) -> dict[str, object]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="MoneyGun L0 delegated auto execution")
+    parser = argparse.ArgumentParser(description="Signal Guild L0 delegated auto execution")
     parser.add_argument("--api-url", default="http://127.0.0.1:8000")
     parser.add_argument("--interval", type=int, default=10)
     parser.add_argument("--once", action="store_true")

@@ -47,7 +47,7 @@ def run_once(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="MoneyGun single-leader execution guardian")
+    parser = argparse.ArgumentParser(description="Signal Guild single-leader execution guardian")
     parser.add_argument("--once", action="store_true", help="run one guarded cycle and exit")
     parser.add_argument("--interval", type=int, default=60)
     arguments = parser.parse_args()

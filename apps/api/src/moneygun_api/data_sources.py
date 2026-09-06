@@ -36,7 +36,7 @@ class OpenDartClient:
         self._require_key()
         query = urlencode({"crtfc_key": self.api_key, **params})
         request = Request(
-            f"{self.api_root}/{endpoint}?{query}", headers={"User-Agent": "MoneyGun/0.4"}
+            f"{self.api_root}/{endpoint}?{query}", headers={"User-Agent": "SignalGuild/0.4"}
         )
         with urlopen(request, timeout=15) as response:  # noqa: S310 - fixed official HTTPS host
             payload = json.loads(response.read().decode("utf-8"))
@@ -82,7 +82,7 @@ class OpenDartClient:
         self._require_key()
         query = urlencode({"crtfc_key": self.api_key})
         request = Request(
-            f"{self.api_root}/corpCode.xml?{query}", headers={"User-Agent": "MoneyGun/0.4"}
+            f"{self.api_root}/corpCode.xml?{query}", headers={"User-Agent": "SignalGuild/0.4"}
         )
         with urlopen(request, timeout=30) as response:  # noqa: S310 - fixed official HTTPS host
             archive_bytes = response.read()

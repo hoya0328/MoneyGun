@@ -42,7 +42,7 @@ def run_once(api_url: str) -> dict[str, object]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="MoneyGun official five-year qualification daily refresh scheduler"
+        description="Signal Guild official five-year qualification daily refresh scheduler"
     )
     parser.add_argument("--api-url", default="http://127.0.0.1:8000")
     parser.add_argument("--interval", type=int, default=60)

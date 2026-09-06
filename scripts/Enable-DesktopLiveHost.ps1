@@ -21,5 +21,5 @@ Start-Service -Name W32Time
 & w32tm.exe /resync /force
 if ($LASTEXITCODE -ne 0) { throw 'Windows Time resynchronization failed.' }
 
-Write-Host 'MoneyGun DESKTOP_LIVE host prerequisites were applied.'
+Write-Host 'Signal Guild DESKTOP_LIVE host prerequisites were applied.'
 Write-Host 'AC sleep and hibernation are disabled; Windows Time is running and synchronized.'

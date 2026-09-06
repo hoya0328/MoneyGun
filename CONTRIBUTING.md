@@ -1,6 +1,6 @@
-# Contributing to MoneyGun
+# Contributing to Signal Guild
 
-MoneyGun은 실제 금융 계좌와 연결될 수 있는 프로젝트이므로 일반적인 UI 프로젝트보다 변경 경계를
+Signal Guild는 실제 금융 계좌와 연결될 수 있는 프로젝트이므로 일반적인 UI 프로젝트보다 변경 경계를
 엄격하게 다룹니다. 작은 변경으로 시작하고, 주문·수량·위험 계산은 항상 결정론적으로 유지해 주세요.
 
 ## 개발 환경

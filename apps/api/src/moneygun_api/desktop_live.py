@@ -104,7 +104,7 @@ def desktop_live_readiness(database: Database | None = None) -> dict[str, Any]:
         "local_database_configured": "로컬 단일 원장 DB",
         "windows_dpapi_secrets_loaded": "Windows DPAPI 비밀 저장소",
         "scheduled_autostart_configured": "Windows 자동 시작",
-        "single_process_lock_acquired": "단일 MoneyGun 프로세스 잠금",
+        "single_process_lock_acquired": "단일 Signal Guild 프로세스 잠금",
         "sleep_disabled": "절전·최대절전 차단",
         "windows_clock_synchronized": "Windows 시각 동기화",
         "registered_public_ip_matches": "키움 등록 공인 IP 일치",
@@ -156,7 +156,9 @@ class DesktopLiveProcessLease:
             raise DesktopLiveError("DESKTOP_LIVE process mutex could not be created.")
         if kernel32.GetLastError() == 183:
             kernel32.CloseHandle(handle)
-            raise DesktopLiveError("Another MoneyGun DESKTOP_LIVE API process is already running.")
+            raise DesktopLiveError(
+                "Another Signal Guild DESKTOP_LIVE API process is already running."
+            )
         lease._handle = int(handle)
         os.environ["MONEYGUN_SINGLE_PROCESS_LOCKED"] = "true"
         atexit.register(lease.close)

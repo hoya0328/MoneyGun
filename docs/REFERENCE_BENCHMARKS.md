@@ -1,4 +1,4 @@
-# MoneyGun 외부 레퍼런스 채택 기준
+# Signal Guild 외부 레퍼런스 채택 기준
 
 최종 갱신: 2026-08-31
 
@@ -8,7 +8,7 @@
 
 ## 투자 원칙 레퍼런스
 
-| 레퍼런스 | 채택하는 장점 | MoneyGun 적용 | 채택하지 않는 것 |
+| 레퍼런스 | 채택하는 장점 | Signal Guild 적용 | 채택하지 않는 것 |
 |---|---|---|---|
 | Warren Buffett·Berkshire | 기업 품질, 현금창출, 장기 소유자 관점 | 영업이익·현금흐름·수익성·재무안전 점수 | “해자”를 LLM의 주관 점수만으로 수치화 |
 | Howard Marks·Oaktree | 위험 통제, 사이클, 2차 사고, 확신의 한계 | BEAR 의무화, 시장 국면별 노출 축소, 손실보다 먼저 위험을 검사 | 단기 거시 전망으로 전액 현금·전액 투자 전환 |
@@ -20,7 +20,7 @@
 
 ## 금융 AI·다중 에이전트 레퍼런스
 
-| 프로젝트 | 확인된 강점 | MoneyGun 적용 | 제한·판정 |
+| 프로젝트 | 확인된 강점 | Signal Guild 적용 | 제한·판정 |
 |---|---|---|---|
 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 펀더멘털·뉴스·기술 분석, Bull/Bear 논쟁, 위험·포트폴리오 역할 분해 | 독립 보고서, 반론, 구조화된 최종 결정, 지속 결정 로그 | 연구 프레임워크이며 LLM 비결정성을 주문 권한과 연결하지 않음 |
 | [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) | 계산과 서술 분리, 숫자 provenance, 리드 에이전트와 전문 파이프라인 | 숫자는 코드 계산, 서술은 LLM, 모든 숫자에 원천·시점 연결 | 미국 중심 데이터 공급자를 한국에 그대로 사용하지 않음 |

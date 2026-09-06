@@ -92,7 +92,7 @@ if (Test-Path -LiteralPath $headFile) {
 }
 $checks['Git release baseline'] = $hasGitBaseline
 
-Write-Host 'MoneyGun L0 external-lock check (secret values are never printed)'
+Write-Host 'Signal Guild L0 external-lock check (secret values are never printed)'
 foreach ($item in $checks.GetEnumerator()) {
     $mark = if ($item.Value) { '[PASS]' } else { '[BLOCK]' }
     Write-Host "$mark $($item.Key)"

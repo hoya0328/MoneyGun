@@ -102,7 +102,7 @@ class PublicDataPortalClient:
                 **params,
             }
         )
-        request = Request(f"{endpoint}?{query}", headers={"User-Agent": "MoneyGun/0.5"})
+        request = Request(f"{endpoint}?{query}", headers={"User-Agent": "SignalGuild/0.5"})
         last_error: Exception | None = None
         for attempt in range(3):
             try:
@@ -331,7 +331,7 @@ def collect_kind_market_action_history(
     root.mkdir(parents=True, exist_ok=True)
     opener = build_opener(HTTPCookieProcessor(CookieJar()))
     opener.open(
-        Request(KIND_DETAIL_SOURCE_URL, headers={"User-Agent": "MoneyGun/0.6"}), timeout=30
+        Request(KIND_DETAIL_SOURCE_URL, headers={"User-Agent": "SignalGuild/0.6"}), timeout=30
     ).read()
     inventory: list[dict[str, Any]] = []
     totals: dict[str, int] = {}
@@ -373,7 +373,7 @@ def collect_kind_market_action_history(
                         KIND_DETAIL_ENDPOINT,
                         data=body,
                         headers={
-                            "User-Agent": "MoneyGun/0.6",
+                            "User-Agent": "SignalGuild/0.6",
                             "Referer": KIND_DETAIL_SOURCE_URL,
                             "Content-Type": "application/x-www-form-urlencoded",
                         },
@@ -1158,7 +1158,7 @@ def merge_kiwoom_benchmark_history(
     target = Path(output_database).resolve()
     source_path = Path(snapshot_database).resolve()
     if not target.is_file() or not source_path.is_file():
-        raise DataSourceError("정규화 DB 또는 MoneyGun 스냅샷 DB가 없습니다.")
+        raise DataSourceError("정규화 DB 또는 Signal Guild 스냅샷 DB가 없습니다.")
     source = sqlite3.connect(source_path)
     try:
         row = source.execute(

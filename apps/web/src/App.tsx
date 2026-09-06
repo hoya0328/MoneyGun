@@ -161,7 +161,7 @@ function Header({ halted, onKill, stage, pending, title }: {
   return (
     <header className="topbar">
       <div className="topbar-title">
-        <span className="eyebrow">머니건 투자회사 · 1일차</span>
+        <span className="eyebrow">SIGNAL GUILD · 1일차</span>
         <strong>{title}</strong>
       </div>
       <div className="system-signals" aria-label="시스템 상태">
@@ -184,9 +184,9 @@ function Sidebar({ page, setPage, stage, automation }: {
 }) {
   return (
     <aside className="sidebar">
-      <button className="brand" onClick={() => setPage('cockpit')} aria-label="MoneyGun 홈">
-        <img className="brand-mark" src="/brand/moneygun-logo.svg" alt="" aria-hidden="true" />
-        <span><strong>MoneyGun</strong><small>픽셀 투자회사</small></span>
+      <button className="brand" onClick={() => setPage('cockpit')} aria-label="Signal Guild 홈">
+        <img className="brand-mark" src="/brand/signal-guild-mark.svg" alt="" aria-hidden="true" />
+        <span><strong>Signal Guild</strong><small>픽셀 투자 길드</small></span>
       </button>
       <nav className="desktop-nav" aria-label="주요 메뉴">
         {navItems.map((item, index) => (
@@ -324,11 +324,11 @@ function OfficeWorld({
   const completed = officeAgents.filter((agent) => agent.state === 'DONE').length
 
   return (
-    <section className={`pixel-office panel ${compact ? 'is-compact' : ''}`} aria-label="MoneyGun 픽셀 직원 사무실">
+    <section className={`pixel-office panel ${compact ? 'is-compact' : ''}`} aria-label="Signal Guild 픽셀 직원 사무실">
       <div className="office-toolbar">
         <div>
           <span className="pixel-kicker">DAY 001 · AFTER MARKET</span>
-          <h2>{compact ? '직원들이 오늘의 투자 퀘스트를 수행 중이에요' : 'MoneyGun 픽셀 오피스'}</h2>
+          <h2>{compact ? '길드원들이 오늘의 투자 퀘스트를 수행 중이에요' : 'Signal Guild 픽셀 오피스'}</h2>
         </div>
         <div className="office-day-status" aria-label={`직원 업무 ${completed}명 완료`}>
           <span><i className="dot dot-good" />{completed}/9 업무 완료</span>
@@ -1057,7 +1057,7 @@ function Orders({
       const result = await runAccountReconciliation() as { status?: string }
       onExecutionChanged(await fetchExecutionStatus())
       setPilot(await fetchPilotStatus())
-      setMessage(result.status === 'PASS' ? '실계좌와 MoneyGun 관리 포지션 대사가 일치합니다.' : '잔고 차이가 발견되어 신규 주문을 중지했습니다.')
+      setMessage(result.status === 'PASS' ? '실계좌와 Signal Guild 관리 포지션 대사가 일치합니다.' : '잔고 차이가 발견되어 신규 주문을 중지했습니다.')
     } catch (error) {
       setMessage(error instanceof Error ? error.message : '계좌 대사에 실패했습니다.')
     } finally { setBusy(null) }
@@ -1581,7 +1581,7 @@ function OperationsCenter({ ownerToken }: { ownerToken: string }) {
           <button
             className="secondary-button"
             disabled={busy !== null}
-            onClick={() => act('exit-guard', runL0ExitTick, 'MoneyGun 관리 보유종목의 청산 조건을 검사했습니다.')}
+            onClick={() => act('exit-guard', runL0ExitTick, 'Signal Guild 관리 보유종목의 청산 조건을 검사했습니다.')}
           >
             {busy === 'exit-guard' ? '김안전이 검사 중…' : `청산 감시 실행 (${exitStatus?.positions.length ?? 0}종목)`}
           </button>
@@ -1742,7 +1742,7 @@ function OperationsCenter({ ownerToken }: { ownerToken: string }) {
         <div className="data-gate-flow" aria-label="자격 데이터 준비 순서">
           <span><b>1</b>KRX 공식 CSV·Excel 저장</span><i>→</i>
           <span><b>2</b>schema 2.0 + SHA-256 정규화</span><i>→</i>
-          <span><b>3</b>MoneyGun 불변 스냅샷</span>
+          <span><b>3</b>Signal Guild 불변 스냅샷</span>
         </div>
         <div className="data-import-row">
           <label><span>가져오기함 파일명</span><input value={qualificationFile} placeholder="예: krx-5y.qualified.json.gz" onChange={(event) => setQualificationFile(event.target.value)} /></label>
@@ -1956,7 +1956,7 @@ function App() {
     return () => controller.abort()
   }, [])
 
-  const currentTitle = useMemo(() => navItems.find((item) => item.id === page)?.label ?? 'MoneyGun', [page])
+  const currentTitle = useMemo(() => navItems.find((item) => item.id === page)?.label ?? 'Signal Guild', [page])
 
   const notify = (message: string) => {
     setToast(message)

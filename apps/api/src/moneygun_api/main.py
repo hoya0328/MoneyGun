@@ -394,7 +394,7 @@ def create_app(database_path: str | Path | None = None) -> FastAPI:
         DesktopLiveProcessLease.acquire() if environment == "desktop-live" else None
     )
     application = FastAPI(
-        title="MoneyGun Foundation API",
+        title="Signal Guild Foundation API",
         version="0.10.0",
         description="Research, shadow, guarded L0 execution, and DESKTOP_LIVE operations.",
     )

@@ -1,8 +1,8 @@
-# MoneyGun project guidance
+# Signal Guild project guidance
 
 ## Product
 
-MoneyGun is a private, single-owner AI investment-company service. The first product is a
+Signal Guild is a private, single-owner AI investment-company service. The first product is a
 KRW 100,000 ring-fenced Korean-stock FOCUS mission. Read `docs/PROJECT_CONTEXT.md`,
 `docs/ARCHITECTURE.md`, `docs/MODE_PROFILES.md`, and `docs/HANDOFF.md` before changing
 product behavior.

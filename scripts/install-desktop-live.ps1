@@ -26,7 +26,7 @@ if ($RegisteredPublicIp -notmatch '^(?:\d{1,3}\.){3}\d{1,3}$') {
 
 Set-Location -LiteralPath $projectRoot
 & npm.cmd run build
-if ($LASTEXITCODE -ne 0) { throw 'MoneyGun web build failed.' }
+if ($LASTEXITCODE -ne 0) { throw 'Signal Guild web build failed.' }
 
 New-Item -ItemType Directory -Path $configurationRoot -Force | Out-Null
 $configuration = [ordered]@{
@@ -57,10 +57,10 @@ $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -RestartCount 999 `
     -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries `
     -ExecutionTimeLimit (New-TimeSpan -Seconds 0)
 Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger `
-    -Principal $principal -Settings $settings -Description 'MoneyGun loopback-only DESKTOP_LIVE supervisor' `
+    -Principal $principal -Settings $settings -Description 'Signal Guild loopback-only DESKTOP_LIVE supervisor (legacy task id)' `
     -Force | Out-Null
 Start-ScheduledTask -TaskName $taskName
 
-Write-Host 'MoneyGun DESKTOP_LIVE auto-start task is installed.'
+Write-Host 'Signal Guild DESKTOP_LIVE auto-start task is installed.'
 Write-Host 'The task starts after this Windows user signs in.'
 Write-Host 'Live trading remains blocked until backup, restore drill, recovery reconciliation, and release review pass.'
