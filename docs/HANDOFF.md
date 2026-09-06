@@ -311,3 +311,6 @@
   문서 지도로 재구성했다. CI, 이슈 템플릿, PR 체크리스트, 기여·보안 안내도 추가했다.
 - 추적 문서에 있던 실제 기존 보유종목 코드를 일반 표현으로 익명화했다. 공개 GitHub에는
   로컬 전체 이력을 올리지 않고 검증된 현재 트리만 단일 루트 커밋으로 게시한다.
+- 공개 저장소는 `https://github.com/hoya0328/MoneyGun`이며 secret scanning과 push
+  protection을 켰다. CI의 Windows 커널 뮤텍스 통합 테스트는 Windows에서만 실행하고
+  Linux GitHub runner에서는 명시적으로 skip한다.

@@ -123,6 +123,10 @@ def test_desktop_live_rejects_non_loopback_origin(
         create_app(tmp_path / "unsafe-origin.sqlite3")
 
 
+@pytest.mark.skipif(
+    desktop_live.platform.system() != "Windows",
+    reason="Windows kernel mutex integration test",
+)
 def test_desktop_live_process_mutex_rejects_a_second_api() -> None:
     first = DesktopLiveProcessLease.acquire()
     try:
