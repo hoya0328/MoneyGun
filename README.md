@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./docs/assets/portfolio-banner.svg" width="100%" alt="MoneyGun — 작은 투자회사의 판단 과정을 한눈에" />
+  <img src="./docs/assets/portfolio-banner.png" width="100%" alt="MoneyGun — 작은 투자회사의 판단 과정을 한눈에" />
 </p>
 
 <p align="center">
