@@ -1,0 +1,36 @@
+{
+  "folders": [
+    {
+      "name": "MoneyGun",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.venv": true,
+      "**/__pycache__": true,
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/coverage": true,
+      "**/.pytest_cache": true,
+      "**/.ruff_cache": true,
+      "**/.vite": true,
+      "**/artifacts": true,
+      "**/logs": true,
+      "**/tmp": true
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+      "package.json": "package-lock.json,tsconfig*.json,vite.config.*,eslint.config.*",
+      "pyproject.toml": "uv.lock,.python-version",
+      ".env.example": ".env,.env.*"
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "typescript.tsdk": "apps/web/node_modules/typescript/lib",
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe"
+  }
+}

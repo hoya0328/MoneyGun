@@ -1,0 +1,1 @@
+"""MoneyGun prototype API package."""

@@ -1,0 +1,44 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# JavaScript
+node_modules/
+dist/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Runtime and generated data
+data/
+logs/
+tmp/
+artifacts/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.zip
+*.tar.gz
+
+# Editors and OS
+.idea/
+*.code-workspace.user
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local deployment overrides
+docker-compose.override.yml

@@ -1,0 +1,24 @@
+name: 기능 제안
+description: MoneyGun의 안전한 개선 아이디어를 제안해 주세요.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 해결하려는 문제
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 제안하는 방식
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: 위험·권한·데이터 영향
+      description: 주문 권한, 손실 한도, 개인정보와 외부 데이터 라이선스 영향을 적어 주세요.
+    validations:
+      required: true

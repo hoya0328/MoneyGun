@@ -1,0 +1,19 @@
+{
+  "name": "moneygun",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Private AI investment-company operating system prototype",
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @moneygun/web",
+    "api": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-api.ps1",
+    "build": "npm run build --workspace @moneygun/web",
+    "typecheck": "npm run typecheck --workspace @moneygun/web",
+    "preview": "npm run preview --workspace @moneygun/web"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

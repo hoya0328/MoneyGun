@@ -1,0 +1,36 @@
+name: 버그 제보
+description: 재현 가능한 오류를 알려 주세요.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: API 키, 계좌번호, 주문 식별자, 실제 보유종목과 로그 원문은 첨부하지 마세요.
+  - type: textarea
+    id: summary
+    attributes:
+      label: 문제 요약
+      description: 기대한 결과와 실제 결과를 함께 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 재현 방법
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 환경
+      placeholder: Windows 11, Node 24, Python 3.13
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 안전 확인
+      options:
+        - label: 실제 자격증명과 금융정보를 제거했습니다.
+          required: true

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title description">
+  <title id="title">MoneyGun logo</title>
+  <desc id="description">A pixel-inspired vault crest with an upward market signal.</desc>
+  <rect width="128" height="128" rx="24" fill="#090C10"/>
+  <path d="M24 10h80v8h14v92h-14v8H24v-8H10V18h14z" fill="#11161D" stroke="#25303B" stroke-width="4"/>
+  <path d="M24 18h80v6h8v80h-8v6H24v-6h-8V24h8z" fill="none" stroke="#D7FF4F" stroke-width="4"/>
+  <path d="M30 40h12v42H30zm28 14h12v28H58zm28-24h12v52H86z" fill="#45E6A6"/>
+  <path d="M36 35v10M64 47v12M92 24v12" stroke="#F2F5F7" stroke-width="5"/>
+  <path d="M27 94h19l14-12 13 7 28-25" fill="none" stroke="#68A7FF" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M91 58h16v16" fill="none" stroke="#D7FF4F" stroke-width="6"/>
+  <path d="M20 20h8v8h-8zm80 0h8v8h-8zM20 100h8v8h-8zm80 0h8v8h-8z" fill="#FFBE55"/>
+</svg>
