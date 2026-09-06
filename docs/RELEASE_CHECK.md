@@ -168,6 +168,8 @@
 - CI 수리: 첫 GitHub Linux 실행에서 Windows 커널 뮤텍스 통합 테스트 1건이 플랫폼 경계 없이
   실행되는 문제를 확인했다. Windows 전용 skip 조건을 명시하고 나머지 101개는 Linux에서도
   동일하게 실행하도록 유지한다.
+- CI 런타임: GitHub의 Node 20 action 지원 종료 경고를 제거하기 위해 공식 Node 24 기반
+  `actions/checkout@v6`, `setup-node@v6`, `setup-python@v6`으로 맞춘다.
 - 공개 안전: `.env`, DPAPI, DB, 백업, 로그, 실제 시장 원본은 Git에서 제외돼 있다. 실제 기존
   보유종목 코드는 문서에서 제거했고 자격증명·공인 IP·개인 로컬 경로 패턴은 현재 트리에 없다.
 - 이력: 로컬 `codex/l0-live-pilot` 전체 이력은 보존한다. GitHub `main`은 검증된 현재 트리의
